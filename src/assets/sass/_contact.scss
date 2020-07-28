@@ -1,0 +1,41 @@
+.contact-area{
+    background-color: #f6f9fe;
+     .social-icon {
+        display: inline-block;
+        height: 45px;
+        width: 45px;
+        line-height: 45px;
+        font-size: 18px;
+        text-align: center;
+        background-color: #7c4fe0;
+        color: #fff;
+        border-radius: 4px;
+    }
+    a {
+        color: #444;
+        -webkit-transition: all 0.3s ease 0s;
+        transition: all 0.3s ease 0s;
+    }
+    .contact-box{
+        .form-group textarea , .form-group input{
+            font-size: 14px;
+            padding: 25px 15px;
+            border: none;
+            -webkit-box-shadow: none;
+            box-shadow: none;
+            border-radius: 0;
+            -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+            -webkit-transition: 0.5s;
+            transition: 0.5s;
+        }
+         button {
+            height: 60px;
+            border-radius: 8px;
+            background: #7c4fe0 !important;
+            &:hover{
+                color: white;
+            }
+        }
+    }
+}

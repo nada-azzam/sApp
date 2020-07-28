@@ -1,0 +1,38 @@
+.review-area {
+   .single-review {
+    -webkit-box-shadow: 0 0.313rem 0.875rem rgba(45, 49, 54, 0.09);
+    box-shadow: 0 0.313rem 0.875rem rgba(45, 49, 54, 0.09);
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    .card-top {
+        position: relative;
+        h4{
+            color: #7c4fe0 !important;
+        }
+        p{
+            font-size: 14px;
+        }
+         .quot-icon {
+            position: absolute;
+            top: 5%;
+            right: 5%;
+            .avatar-md {
+                height: 4rem;
+                width: 4rem;
+            }
+        }
+    }
+    .reviewer {
+        position: relative;
+        background-color: #f6f9fe;
+        .reviewer-thumb{
+            .avatar-lg {
+                height: 5rem;
+                width: 5rem;
+                border-radius: 100px !important;
+
+            }
+        }
+    }
+}
+}

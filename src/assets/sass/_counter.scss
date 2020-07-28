@@ -1,0 +1,23 @@
+.counter-area {
+    .single-counter {
+        position: relative;
+        &:not(:last-child)::after{
+            position: absolute;
+            content: '';
+            height: 70%;
+            width: 1px;
+            background-color: #222;
+            top: 50%;
+            right: 0;
+            transform: translateY(-50%);
+            opacity: 0.15;
+        }
+        & span {
+            font-size: 3em;
+            background: linear-gradient(-47deg, #8731E8 0%, #4528DC 100%);
+            -webkit-background-clip: text;
+            font-weight: bolder;
+            -webkit-text-fill-color: transparent;
+        }
+    }
+}
