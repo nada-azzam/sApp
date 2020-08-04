@@ -15,9 +15,10 @@ const Hero = () => {
       <div className="container">
         <div className="row align-items-center">
           <motion.div className="col-12 col-md-7 col-lg-6"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 ,  x:100 }}
-          transition={{ delay: 1.6 , duration: .5}}>
+          initial={{ opacity: 0 ,x:-100 }}
+          animate={{ opacity: 1 ,  x:0 }}
+          transition={{ delay: 1.6 , duration: .5}}
+          >
             <div className="welcome-intro">
               <h1 className="text-white">Make cool Landing pages with sApp</h1>
               <p className="text-white my-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit nihil tenetur minus quidem est deserunt molestias accusamus harum ullam tempore debitis et, expedita, repellat delectus aspernatur neque itaque qui quod.</p>
@@ -34,8 +35,8 @@ const Hero = () => {
           </motion.div>
 
           <motion.div className="col-12 col-md-5 col-lg-6"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 ,  x:-20 }}
+          initial={{ opacity: 0 ,x:100 }}
+          animate={{ opacity: 1 ,  x:0 }}
           transition={{ delay: 1.6 , duration: .5}}>
             <div className="welcome-thumb mx-auto ">
               <img className="welcome-mobile" src={mookup} alt="" />
