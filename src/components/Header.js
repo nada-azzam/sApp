@@ -1,15 +1,25 @@
-import React from 'react';
+import React , {useState }from 'react';
 import logo from '../assets/imgs/logo-white.png'
 
-const Header = ()=> {
-  return (
+const Header = () => {
+   const [showNavToggState , SetshowNavToggState ]= useState({
+      show:false
+   })
+   const toggleNav = ()=>{
+      const doesShow = showNavToggState.show;
+      SetshowNavToggState({show:!doesShow})
+   }
+   const mainNavStyle = {
 
-    <nav className="" >
+    };
+   return (
+
+      <nav  >
          <div className="container">
-            <a href="" className="navbar-brand">
-            <img src={logo} alt="Kion logo" className="logo"/>
+            <a href="#" className="navbar-brand">
+               <img src={logo} alt="Kion logo" className="logo" />
             </a>
-            <ul className="main-nav js--main-nav">
+            <ul style={showNavToggState.show? { display:'block'} : {}} className="main-nav js--main-nav">
                <li>
                   <a href="#hero">Home </a>
                </li>
@@ -26,11 +36,16 @@ const Header = ()=> {
                   <a href="#review">Testmonial</a>
                </li>
             </ul>
-            <a className="mobile-nav-icon js--nav-icon"><i className="fas fa-align-justify"></i></a>
+
+            <span  className={showNavToggState.show? ' active navTrigger' :'navTrigger' } onClick={toggleNav}>
+               <i></i>
+               <i></i>
+               <i></i>
+            </span>
          </div>
 
       </nav>
-  );
+   );
 }
 
 export default Header;

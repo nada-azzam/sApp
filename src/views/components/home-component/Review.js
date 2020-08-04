@@ -26,7 +26,7 @@ const Reviews = () => {
                     </div>
                 </div>
                 <div className="row">
-                    <div className="col-12 col-md-6 col-lg-4 res-margin">
+                    <div className="col-12  col-lg-4 res-margin">
                         <div className="single-review card">
                             <div className="card-top p-4">
                                 <div className="review-icon">
@@ -60,7 +60,7 @@ const Reviews = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="col-12 col-md-6 col-lg-4 res-margin">
+                    <div className="col-12  col-lg-4 res-margin">
                         <div className="single-review card">
                             <div className="card-top p-4">
                                 <div className="review-icon">
@@ -89,7 +89,7 @@ const Reviews = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="col-12 col-md-6 col-lg-4">
+                    <div className="col-12  col-lg-4">
                         <div className="single-review card">
                             <div className="card-top p-4">
                                 <div className="review-icon">

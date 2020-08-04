@@ -1,0 +1,111 @@
+@media  (max-width: 1200px) {
+
+    nav.navbar {
+        padding: 0;
+     }
+}
+
+
+@media only screen and (max-width: 1024px) {
+
+
+    .logo{
+        margin: 0;
+        width: 2.5rem;
+    }
+     .main-nav{
+        float: none;
+        margin-top: 1rem !important;
+        display: none;
+        transition: all 2s ease-in-out;
+        text-align: center;
+
+    }
+    .mobile-nav-icon {display: inline-block;}
+
+    .main-nav li {
+        display: block;
+        margin-left: 0.3rem;
+
+    }
+
+    .main-nav li a:link,
+    .main-nav li a:visited {
+        display: block;
+        border: 0;
+        padding: 10px 0;
+        font-size: 100%;
+    }
+    .nav-item.btn-full{
+        margin-left: -4px !important;
+    }
+
+}
+@media only screen and (max-width: 992px) {
+
+    .features-area .image-box {margin-bottom: 1rem; }
+    .review-area .single-review{margin-bottom: 1rem;}
+}
+
+@media screen and  (max-width: 767px)  {
+    .features-area .image-box {margin-bottom: .5rem; }
+    .review-area .single-review{margin-bottom: .5rem;}
+    .btn{
+        cursor: pointer;
+        width: 100%;
+    }
+
+
+
+    // BASE
+    h1 {font-size: 2.4rem;}
+    h2 {font-size: 2rem; }
+
+
+        // HERO SECTION
+.hero-section{
+clip-path: polygon(50% 0%, 100% 0, 100% 33%, 100% 83%, 100% 100%, 100% 100%, 39% 89%, 0 100%, 0% 35%, 0 0);
+height: 100%;
+.welcome-thumb{
+    display: none;
+}
+.welcome-intro{
+    padding-top: 1rem;
+    padding-bottom: 3rem;
+}
+
+}
+.button-group img {
+    max-width: 9rem;
+}
+
+}
+
+//smartphone landscape
+@media screen and (max-width: 575px) {
+        // BASE
+        h1 {font-size: 1.8rem;}
+        h2 {font-size: 1.6rem; }
+        .section {
+            padding: 22px 0;
+        }
+        // COUNTER SECTION
+        .counter-area .single-counter span {
+            font-size: 2.5em;}
+            // COUNTER SECTION
+.counter-area .single-counter:not(:last-child)::after {
+    height: 45%;
+}
+.counter-area .single-counter:nth-child(2n)::after {
+    display: none;
+}
+
+}//end media query
+
+
+@media screen and (max-width: 332px) {
+    .main-nav {
+        margin-top: 0 !important;
+
+        position: unset;
+    }}

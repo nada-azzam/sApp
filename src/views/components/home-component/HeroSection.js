@@ -3,16 +3,21 @@ import Header from '../../../components/Header';
 import mookup from '../../../assets/imgs/features/welcome-mockup.png';
 import googlePlay from '../../../assets/imgs/features/google-play.png';
 import appStore from '../../../assets/imgs/features/app-store.png';
+import { motion } from 'framer-motion';
 
 
 const Hero = () => {
   return (
 
-    <header id="hero" className="hero-section" >
+    <header id="hero" className="hero-section"
+      >
       <Header />
       <div className="container">
         <div className="row align-items-center">
-          <div className="col-12 col-md-7 col-lg-6">
+          <motion.div className="col-12 col-md-7 col-lg-6"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 ,  x:100 }}
+          transition={{ delay: 1.6 , duration: .5}}>
             <div className="welcome-intro">
               <h1 className="text-white">Make cool Landing pages with sApp</h1>
               <p className="text-white my-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit nihil tenetur minus quidem est deserunt molestias accusamus harum ullam tempore debitis et, expedita, repellat delectus aspernatur neque itaque qui quod.</p>
@@ -26,13 +31,16 @@ const Hero = () => {
               </div>
               <p className="d-inline-block text-white fw-3 font-italic mt-3">* Available on iPhone, iPad and all Android devices</p>
             </div>
-          </div>
+          </motion.div>
 
-          <div className="col-12 col-md-5 col-lg-6">
+          <motion.div className="col-12 col-md-5 col-lg-6"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 ,  x:-20 }}
+          transition={{ delay: 1.6 , duration: .5}}>
             <div className="welcome-thumb mx-auto ">
               <img className="welcome-mobile" src={mookup} alt="" />
             </div>
-          </div>
+          </motion.div>
         </div>
       </div>
 

@@ -12,6 +12,8 @@
     float: right;
     list-style: none;
     margin-top: 27px;
+    transition: all 0.2s ease-in-out;
+
  }
 
  .main-nav li {
@@ -25,7 +27,7 @@
     color: #fff;
     text-decoration: none;
     text-transform: uppercase;
-    font-size: 70%;
+    font-size: 85%;
     border-bottom: 2px solid transparent;
     -webkit-transition: border-bottom 0.2s;
     transition: border-bottom 0.2s;
@@ -62,13 +64,159 @@
     box-shadow: 0 2px 4px #71a9cc;
     z-index: 9999;
     transition: all 2s, ease-in-out;
-
- }
-
- .sticky .main-nav { margin-top: 18px; }
-
- .sticky .main-nav li a
+&.main-nav { margin-top: 18px; }
+&.main-nav li a
   {
     padding: 16px 0;
     color: white;
  }
+ }
+
+
+
+// NAV ICON
+.navTrigger {
+   display: none;
+}
+@media screen and (max-width:1024px) {
+   .navTrigger {
+       display: block;
+   }
+
+   /* Animation */
+/* Inspiration taken from Dicson https://codemyui.com/simple-hamburger-menu-x-mark-animation/ */
+
+.navTrigger {
+   cursor: pointer;
+   width: 30px;
+   height: 25px;
+   top: 9px;
+   position: absolute;
+   right: 30px;
+   bottom: 0;
+}
+
+.navTrigger i {
+   background-color: #fff;
+   border-radius: 2px;
+   content: '';
+   display: block;
+   width: 100%;
+   height: 4px;
+}
+
+.navTrigger i:nth-child(1) {
+   -webkit-animation: outT 0.5s backwards;
+   animation: outT 0.5s backwards;
+   -webkit-animation-direction: reverse;
+   animation-direction: reverse;
+}
+
+.navTrigger i:nth-child(2) {
+   margin: 5px 0;
+   -webkit-animation: outM 0.5s backwards;
+   animation: outM 0.5s backwards;
+   -webkit-animation-direction: reverse;
+   animation-direction: reverse;
+}
+
+.navTrigger i:nth-child(3) {
+   -webkit-animation: outBtm 0.5s backwards;
+   animation: outBtm 0.5s backwards;
+   -webkit-animation-direction: reverse;
+   animation-direction: reverse;
+}
+
+.navTrigger.active i:nth-child(1) {
+   -webkit-animation: inT 0.5s forwards;
+   animation: inT 0.5s forwards;
+}
+
+.navTrigger.active i:nth-child(2) {
+   -webkit-animation: inM 0.5s forwards;
+   animation: inM 0.5s forwards;
+}
+
+.navTrigger.active i:nth-child(3) {
+   -webkit-animation: inBtm 0.5s forwards;
+   animation: inBtm 0.5s forwards;
+}
+
+
+@keyframes inM {
+   50% {
+       transform: rotate(0deg);
+   }
+   100% {
+       transform: rotate(45deg);
+   }
+}
+
+
+
+
+@keyframes outM {
+   50% {
+       transform: rotate(0deg);
+   }
+   100% {
+       transform: rotate(45deg);
+   }
+}
+
+
+
+@keyframes inT {
+   0% {
+       transform: translateY(0px) rotate(0deg);
+   }
+   50% {
+       transform: translateY(9px) rotate(0deg);
+   }
+   100% {
+       transform: translateY(9px) rotate(135deg);
+   }
+}
+
+
+
+@keyframes outT {
+   0% {
+       transform: translateY(0px) rotate(0deg);
+   }
+   50% {
+       transform: translateY(9px) rotate(0deg);
+   }
+   100% {
+       transform: translateY(9px) rotate(135deg);
+   }
+}
+
+
+
+@keyframes inBtm {
+   0% {
+       transform: translateY(0px) rotate(0deg);
+   }
+   50% {
+       transform: translateY(-9px) rotate(0deg);
+   }
+   100% {
+       transform: translateY(-9px) rotate(135deg);
+   }
+}
+
+
+
+@keyframes outBtm {
+   0% {
+       transform: translateY(0px) rotate(0deg);
+   }
+   50% {
+       transform: translateY(-9px) rotate(0deg);
+   }
+   100% {
+       transform: translateY(-9px) rotate(135deg);
+   }
+}
+}

@@ -68,7 +68,7 @@ const CounterArea = () => {
                                     </div>
                                 </div>
                                 <div className="col-12">
-                                    <button type="submit" className="btn btn-lg btn-block mt-3"><span className="text-white pr-3"><i className="fas fa-paper-plane"></i></span>Send Message</button>
+                                    <button type="submit" className="btn  btn-block mt-3"><span className="text-white pr-3"><i className="fas fa-paper-plane"></i></span>Send Message</button>
                                 </div>
                             </div>
                         </form>

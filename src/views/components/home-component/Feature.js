@@ -24,7 +24,7 @@ const Feature = () => {
                 </div>
             </div>
             <div className="row">
-                <div className="col-12 col-md-6 col-lg-4 res-margin">
+                <div className="col-12  col-lg-4 res-margin">
                     <div className="image-box text-center icon-1 p-5 wow fadeInLeft" >
                         <div className="featured-img mb-3">
                             <img className="avatar-sm" src={layers} alt=""/>
@@ -35,7 +35,7 @@ const Feature = () => {
                         </div>
                     </div>
                 </div>
-                <div className="col-12 col-md-6 col-lg-4 res-margin">
+                <div className="col-12  col-lg-4 res-margin">
                     <div className="image-box text-center icon-1 p-5 wow fadeInUp" >
                         <div className="featured-img mb-3">
                             <img className="avatar-sm" src={premium} alt=""/>
@@ -46,7 +46,7 @@ const Feature = () => {
                         </div>
                     </div>
                 </div>
-                <div className="col-12 col-md-6 col-lg-4">
+                <div className="col-12  col-lg-4">
                     <div className="image-box text-center icon-1 p-5 wow fadeInRight">
                         <div className="featured-img mb-3">
                             <img className="avatar-sm" src={lock} alt=""/>

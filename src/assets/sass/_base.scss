@@ -5,13 +5,17 @@ $mediumslateblue:#4528DC;
      margin: 0;
     padding: 0;
 }
-
+html{
+    overflow-x: hidden !important;
+}
 body {
     font-family: 'Poppins', sans-serif;
     line-height: 24px;
     color: #565656;
-    font-size: calc(3px + 1.5vmin);
+    font-size: 14px;
     scroll-behavior: smooth;
+    overflow-x: hidden !important;
+
 
 }
 ol li, ul li {
